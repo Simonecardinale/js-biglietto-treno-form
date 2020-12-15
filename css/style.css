@@ -18,15 +18,83 @@ h1 {
     color: white;
 }
 
-.dati {
+/* box superiore */
+
+.dati_container {
     width: 80%;
     background-color: white;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px;
+    margin: 30px 0;
+}
+
+.dati {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #b91450;
 }
 
 .col {
     display: flex;
     flex-direction: column;
+}
+
+input, select {
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #b91450;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.buttons_container {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons_container button {
+    margin: 20px 20px;
+    padding: 5px;
+    transform: scale(1.3);
+    color: #b91450;
+    font-weight: bold;
+}
+/* /box superiore */
+
+h2 {
+    color: white;
+}
+
+/* box inferiore */
+
+.ticket {
+    width: 80%;
+    margin: auto;
+    background-color: #fff;
+    padding: 30px 0;
+}
+
+.ticket_container {
+    width: 90%;
+    margin: auto;
+}
+
+.biglietto {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.nome_passeggero {
+    height: 200px;
+    background-color: #808080;
+    padding: 30px;
 }
