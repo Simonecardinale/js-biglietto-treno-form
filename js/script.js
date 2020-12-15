@@ -1,11 +1,10 @@
 // genera
 var show = document.getElementById('genera');show.addEventListener('click', function() {
+document.getElementById('result').className = "ticket";
 var nome = document.getElementById('nome').value;
-console.log(nome);
 var chilometri = document.getElementById('chilometri').value;
-console.log(chilometri);
 var eta = document.getElementById('eta').value;
-console.log(eta);
+
 
 
 // calcolo tariffa e caratteristiche biglietto
@@ -32,6 +31,7 @@ if (eta == 'minorenne'){
 // nascondi
 
 var hidden = document.getElementById('annulla');hidden.addEventListener('click', function() {
+    document.getElementById('result').className = "hidden";
     document.getElementById('nomePasseggero').innerHTML = "";
     document.getElementById('offerta_applicata').innerHTML = "";
     document.getElementById("costoBiglietto").innerHTML = "";
@@ -39,6 +39,15 @@ var hidden = document.getElementById('annulla');hidden.addEventListener('click',
     document.getElementById('codiceBiglietto').innerHTML = "";
     }
 );
+
+// decorazioni
+
+var decoration = document.getElementById('nome');decoration.addEventListener ('click', function(){
+    document.getElementById('nome').className = "colorized";
+}
+)
+
+
 
 
 

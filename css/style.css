@@ -99,3 +99,15 @@ h2 {
     background-color: #808080;
     padding: 30px;
 }
+
+
+.hidden {
+    display: none;
+} 
+
+/* decorazioni */
+
+.colorized {
+    background-color: #b91450;
+    color: white;
+}
